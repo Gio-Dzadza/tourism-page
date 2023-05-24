@@ -1,0 +1,309 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="My Website">
+    <meta property="og:description" content="This is my awesome website!">
+    <meta property="og:image" content="https://example.com/my-image.jpg">
+    <meta property="og:url" content="https://example.com">
+
+    <!-- Google meta tags -->
+    <meta name="description" content="This is my awesome website!">
+    <meta name="keywords" content="website, awesome">
+    <meta name="author" content="My Name">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="images/Logo.svg" /></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="item"><a class="link" href="#">home</a></li>
+                    <li class="item"><a class="link" href="#" >about us</a></li>
+                    <li class="item"><a class="link" href="#" >our services</a></li>
+                    <li class="item"><a class="link" href="#" >tour package</a></li>
+                </ul>
+            </nav>
+            <button class="burger" onclick="toggleNav()">☰</button>
+        </div>
+    </header>
+    <section class="swiper-section">
+        <div class="swiper">
+            <!-- additional wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/slides/greece.png" alt="greece" />
+                    <div class="overlay">
+                        <div class="layer">
+                            <img class="layer-img" src="images/slides/layer/Layer.png" alt="layer">
+                            <p class="layer-text">From $199/Person</p>
+                        </div>
+                        <p class="overlay-heading">Discover Greece</p>
+                        <p class="overlay-text">TRAVEL WITH UNIQUE EXPERIENCE</p>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="images/slides/france.png" alt="paris" /></div>
+                <div class="swiper-slide"><img src="images/slides/thailand.png" alt="phuket" /></div>
+            </div>  
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"><img src="images/icons/prev.svg"/></div>
+            <div class="swiper-button-next"><img src="images/icons/next.svg"/></div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services-innerdiv">
+            <div class="service-badge">
+                <h2 class="discover">discover</h2>
+                <h1 class="badge-heading">our hot services</h1>
+                <img class="badge-icon" src="images/icons/wave.png" alt="wave" />
+                <p class="badge-text">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                </p>
+            </div>
+            <div class="service-cards">
+                <div class="modal-window">
+                    <div class="modal-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="video-overlay">
+            <div class="video-badge">
+                <h2 class="video-badge-title">discover</h2>
+                <h1 class="video-badge-heading">watch our video tour</h1>
+                <img src="images/icons/whitewave.png" alt="whitewave">
+            </div>
+            <div class="player">
+                <div class="player-overlay">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="frame" src="https://www.youtube.com/embed/9txxodYuZGc" 
+                title="rafting video" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="border"></div>
+    </section>
+    <section class="stats">
+        <div class="stat-item">
+            <img src="images/staticons/star.png" alt="star" class="stat-item-img">
+            <h1 class="stat-item-numbers">120,859</h1>
+            <p class="stat-item-title">happy travellers</p>
+        </div>
+        <div class="stat-item">
+            <img src="images/staticons/tours.png" alt="cities" class="stat-item-img">
+            <h1 class="stat-item-numbers">2594</h1>
+            <p class="stat-item-title">satisfied tour</p>
+        </div>
+        <div class="stat-item">
+            <img src="images/staticons/globe.png" alt="globe" class="stat-item-img">
+            <h1 class="stat-item-numbers">854</h1>
+            <p class="stat-item-title">destination</p>
+        </div>
+        <div class="stat-item">
+            <img src="images/staticons/hotels.png" alt="hotels" class="stat-item-img">
+            <h1 class="stat-item-numbers">978</h1>
+            <p class="stat-item-title">hotels $ resorts</p>
+        </div>
+    </section>
+    <section class="offers">
+        <div class="offers-innerdiv">
+            <div class="offers-badge">
+                <h2 class="offers-badge-title">we offer</h2>
+                <h1 class="offers-badge-heading">popular tour package</h1>
+                <img class="offers-badge-icon" src="images/icons/violetwave.png" alt="violetwave">
+            </div>
+            <div class="offer-cards">
+                <div class="offer-modal">
+                    <div class="offer-modal-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section">
+        <div class="sbcb-title-badge">
+            <h1 class="suscribe-title">get 10% off <span>on</span> your next travel</h1>
+            <p class="subscribe-text">Maximum discount 1000$ per person</p>
+        </div>
+        <div class="email-subscribe">
+            <input class="email-input" type="email" placeholder="Enter your email">
+            <button class="subscribe-btn">subscribe</button>
+        </div>
+    </section>
+    <section class="happy-customers">
+        <div class="customers-innerdiv">
+            <div class="customers-badge">
+                <h2 class="customers-badge-heading">our smiles</h2>
+                <h1 class="customers-badge-title">happy travelers</h1>
+                <img src="images/icons/violetwave.png" alt="violet wave" class="customers-badge-wave">
+            </div>
+            <div class="customers-cards">
+                <div class="customer-card">
+                    <div class="customer-name">
+                        <img src="images/customers-section/ribeca.png" alt="ribeca" class="customer-card-image">
+                        <h2 class="customer-name">Ribeca Singh</h2>
+                    </div>
+                    <div class="customer-quote">
+                        <p class="customer-quote-text">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard</p>
+                        <img src="images/icons/quote.png" alt="quote-symbol" class="quote-symbol">
+                    </div>
+                </div>
+                <div class="customer-card">
+                    <div class="customer-name">
+                        <img src="images/customers-section/jimmy.png" alt="ribeca" class="customer-card-image">
+                        <h2 class="customer-name">Jimmy dean</h2>
+                    </div>
+                    <div class="customer-quote">
+                        <p class="customer-quote-text">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard</p>
+                        <img src="images/icons/quote.png" alt="quote-symbol" class="quote-symbol">
+                    </div>
+                </div>
+                <div class="customer-card">
+                    <div class="customer-name">
+                        <img src="images/customers-section/theodule.png" alt="ribeca" class="customer-card-image">
+                        <h2 class="customer-name">Theodule Terer</h2>
+                    </div>
+                    <div class="customer-quote">
+                        <p class="customer-quote-text">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard</p>
+                        <img src="images/icons/quote.png" alt="quote-symbol" class="quote-symbol">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="book">
+        <div class="book-innerdiv">
+            <h1 class="book-title">Ready to plan your trip?</h1>
+            <button class="book-btn">book now</button>
+        </div>
+    </section>
+    <section class="destination-section">
+        <div class="destination-badge">
+            <h2 class="destination-badge-heading">destination</h2>
+            <h1 class="destination-badge-title">popular tourism countries</h1>
+            <img src="images/icons/violetwave.png" alt="violetwave" class="destination-badge-wave">
+        </div>
+        <div class="countries">
+            <div class="country">
+                <img src="images/destination/thailand.png" alt="thailand" class="country-image">
+                <div class="country-overlay">
+                    <div class="country-name-price">
+                        <h1 class="country-name">thailand</h1>
+                        <p class="country-price">$900 - $1900</p>
+                    </div>
+                    <button class="country-button">
+                        <img src="images/icons/arrow.png" alt="arrow" class="arrow">
+                    </button>
+                </div>
+            </div>
+            <div class="country">
+                <img src="images/destination/italy.png" alt="italy" class="country-image">
+                <div class="country-overlay">
+                    <div class="country-name-price">
+                        <h1 class="country-name">italy</h1>
+                        <p class="country-price">$700 - $2000</p>
+                    </div>
+                    <button class="country-button">
+                        <img src="images/icons/arrow.png" alt="arrow" class="arrow">
+                    </button>
+                </div>
+            </div>
+            <div class="country">
+                <img src="images/destination/indonesia.png" alt="indonesia" class="country-image">
+                <div class="country-overlay">
+                    <div class="country-name-price">
+                        <h1 class="country-name">indonesia</h1>
+                        <p class="country-price">$300 - $1100</p>
+                    </div>
+                    <button class="country-button">
+                        <img src="images/icons/arrow.png" alt="arrow" class="arrow">
+                    </button>
+                </div>
+            </div>
+            <div class="country">
+                <img src="images/destination/singapuri.png" alt="singapore" class="country-image">
+                <div class="country-overlay">
+                    <div class="country-name-price">
+                        <h1 class="country-name">singapore</h1>
+                        <p class="country-price">$1900 - $2700</p>
+                    </div>
+                    <button class="country-button">
+                        <img src="images/icons/arrow.png" alt="arrow" class="arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3810.261931552063!2d-87.92169916227829!3d44.531810049330495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1683747532819!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <div class="footer-cards">
+            <div class="links">
+                <div>
+                    <h1 class="footcard-title">quick links</h1>
+                    <ul class="footcard-list">
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">home</a></li>
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">about company</a></li>
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">testimonials</a></li>
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">infrastructure</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="footcard-title">support</h1>
+                    <ul class="footcard-list">
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">get started</a></li>
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">lorem</a></li>
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">help</a></li>
+                        <li class="footcard-list-item"><a class="link-adrs" href="#">ipsum</a></li>
+                    </ul>
+                </div>
+                <address class="address">
+                    <h1 class="footcard-title">address</h1>
+                    14, 1 Ellis bridge ST,<br>
+                    auckland 3500, Australia<br>
+                    +1234567890<br>
+                    contactus@demo.com
+                </address>
+            </div>
+            <form class="subscribe">
+                <label for="email" class="subscribe-title">
+                    <span>Subscribe to our newsletter</span><br>
+                    <input class="email-input" id="email" type="email" placeholder="Your email">
+                    <button class="send-btn">
+                        <img src="images/icons/arrow.png" alt="sendicon">
+                    </button>
+                </label>
+            </form>
+        </div>
+        <div class="rights">tourism&copy;<span>all rights reserved</span></div>
+    </footer>
+<script src="index.js" type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper(...);
+</script>
+<script src="main.js"></script>
+</body>
+</html>
